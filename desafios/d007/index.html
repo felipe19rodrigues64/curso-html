@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este exercício em diversos dispositivos ou simplesmente aumente e diminua a janela de seu navegador</p>
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudio em HTML5</p>
+    <h4>Paranoid - Black Sabath</h4>
+    <!--<audio src="midia/BLACK SABBATH   'Paranoid' (Official Video).mp3" controls autoplay></audio>-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/BLACK SABBATH   'Paranoid' (Official Video).mp3" type="audio/mpeg">
+        <source src="midia/BLACK SABBATH   'Paranoid' (Official Video).ogg3" type="audio/ogg">
+        <source src="midia/BLACK SABBATH   'Paranoid' (Official Video).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com estes formatos de áudio</p>
+        <a href="midia/BLACK SABBATH   'Paranoid' (Official Video).mp3"> Clique aqui para baixar o arquivo .mp3</a>
+
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+        
+        #  - id
+        .  - class
+        :  - pseudo-class
+        :: - pseudo-element
+        >  - children
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: darkred;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        a::before {
+            content: 'Link > ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Persomalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/felipe19rodrigues64" target="_blank"> Repositório github</a></li>
+        <li><a href="https://studio.youtube.com/channel/UCXg9gc6p9seKZWKSdh1BNjw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" target="_blank"> Canal do Youtube</a></li>
+        <li> <a href="https://www.facebook.com/Felipe1964/" target="_blank">Página do Facebook</a></li>
+    </ul>    
+</body>
+</html>
